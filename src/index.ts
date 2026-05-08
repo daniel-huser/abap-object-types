@@ -107,3 +107,14 @@ export function tadirToAdt(tadir: string): string {
   if (m.adt === null) throw new Error(`No ADT mapping for TADIR type: ${tadir}`);
   return m.adt;
 }
+
+export function adtToPseudo(adt: string): string {
+  return findByAdt(adt).pseudo;
+}
+
+export function adtToTadir(adt: string): string {
+  const m = findByAdt(adt);
+  if (m.tadir === null) throw new Error(`No TADIR mapping for ADT type: ${adt}`);
+  return m.tadir;
+}
+

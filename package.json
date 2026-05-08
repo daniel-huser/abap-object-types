@@ -1,0 +1,30 @@
+{
+  "name": "@daniel-huser/abap-object-types",
+  "version": "0.1.1",
+  "description": "ABAP Object Type Mapping",
+  "author": "Daniel Huser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel-huser/abap-object-types.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "tsx": "4.21.0",
+    "typescript": "6.0.3"
+  }
+}
