@@ -12,7 +12,7 @@ This is an approach to help wrangle with the history of "ABAP Object Types".
 As ABAP Objects are defined by a name, but that name is only unique with the corresponding Object Type, we (and especially AI) always need such type to identify objects.
 Unfortunatly ABAP Objects are not all the same.
 
-## Explanetion
+## Explanation
 
 ### TADIR
 There is the TADIR Object Type value, which is a 4-char UPPERCASE value and there are hundreds of different ones.
