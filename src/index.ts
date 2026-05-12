@@ -21,12 +21,12 @@ export interface ObjectTypeMapping {
 // SRVB uses TADIR "SRVB" but ADT groups it under "SRVD".
 const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "AUTH", tadir: "AUTH", adt: "AUTH/AO" },
-  { pseudo: "BDEF", tadir: "BDEF", adt: "BDEF/BD" },
+  { pseudo: "BDEF", tadir: "BDEF", adt: "BDEF/BDO" },
   { pseudo: "CHDO", tadir: "CHDO", adt: "CHDO/CHD" },
   { pseudo: "CHKC", tadir: "CHKC", adt: "CHKC/TYP" },
   { pseudo: "CHKO", tadir: "CHKO", adt: "CHKO/TYP" },
   { pseudo: "CLAS", tadir: "CLAS", adt: "CLAS/OC" },
-  { pseudo: "DCLS", tadir: "DCLS", adt: "DCLS/AS" },
+  { pseudo: "DCLS", tadir: "DCLS", adt: "DCLS/DL" },
   { pseudo: "DDLS", tadir: "DDLS", adt: "DDLS/DF" },
   { pseudo: "DEVC", tadir: "DEVC", adt: "DEVC/K" },
   { pseudo: "DIAL", tadir: "DIAL", adt: "DIAL/A" },
@@ -41,17 +41,17 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "INCL", tadir: "PROG", adt: "PROG/I" }, // include programs are stored as PROG type in TADIR
   { pseudo: "INTF", tadir: "INTF", adt: "INTF/OI" },
   { pseudo: "MSAG", tadir: "MSAG", adt: "MSAG/N" },
-  { pseudo: "NROB", tadir: "NROB", adt: "NROB/NR" },
-  { pseudo: "PARA", tadir: "PARA", adt: "PARA/EP" },
+  { pseudo: "NROB", tadir: "NROB", adt: "NROB/NRO" },
+  { pseudo: "PARA", tadir: "PARA", adt: "PARA/R" },
   { pseudo: "PROG", tadir: "PROG", adt: "PROG/P" },
-  { pseudo: "SFPF", tadir: "SFPF", adt: "SFPF/FP" },
+  { pseudo: "SFPF", tadir: "SFPF", adt: "SFPF/F5F" },
   { pseudo: "SFPI", tadir: "SFPI", adt: "SFPI/FI" },
-  { pseudo: "SHLP", tadir: "SHLP", adt: "SHLP/SH" },
-  { pseudo: "SHMA", tadir: "SHMA", adt: "SHMA/SHM" },
+  { pseudo: "SHLP", tadir: "SHLP", adt: "SHLP/DH" },
+  { pseudo: "SHMA", tadir: "SHMA", adt: "SHMA/SH" },
   { pseudo: "SICF", tadir: "SICF", adt: "SICF/TYP" },
   { pseudo: "SOTR", tadir: "SOTR", adt: "SOTR/OTR" }, // can't validate cause ADT doesn't show any SOTR objects
-  { pseudo: "SRVB", tadir: "SRVB", adt: "SRVD/SVB" },
-  { pseudo: "SRVD", tadir: "SRVD", adt: "SRVD/SVD" },
+  { pseudo: "SRVB", tadir: "SRVB", adt: "SRVB/SVB" },
+  { pseudo: "SRVD", tadir: "SRVD", adt: "SRVD/SRV" },
   { pseudo: "STRU", tadir: "TABL", adt: "TABL/DS" }, // Structures are stored as TABL type in TADIR
   { pseudo: "SXCI", tadir: "SXCI", adt: "SXCI/XCI" },
   { pseudo: "SXSD", tadir: "SXSD", adt: "SXSD/XSD" },
@@ -61,7 +61,7 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "TTYP", tadir: "TTYP", adt: "TTYP/DA" },
   { pseudo: "TYPE", tadir: "TYPE", adt: "TYPE/K" },
   { pseudo: "VIEW", tadir: "VIEW", adt: "VIEW/DV" },
-  { pseudo: "WAPA", tadir: "WAPA", adt: "WAPA/WA" },
+  { pseudo: "WAPA", tadir: "WAPA", adt: "WAPA/WO" },
   { pseudo: "WDCC", tadir: "WDCC", adt: "WDCC/WCI" },
   { pseudo: "XSLT", tadir: "XSLT", adt: "XSLT/VT" },
 ];
