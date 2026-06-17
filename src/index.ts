@@ -55,6 +55,7 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "SRVB", tadir: "SRVB", adt: "SRVB/SVB" },
   { pseudo: "SRVD", tadir: "SRVD", adt: "SRVD/SRV" },
   { pseudo: "STRU", tadir: "TABL", adt: "TABL/DS" }, // Structures are stored as TABL type in TADIR
+  { pseudo: "SUSO", tadir: "SUSO", adt: "SUSO/B" },
   { pseudo: "SXCI", tadir: "SXCI", adt: "SXCI/XCI" },
   { pseudo: "SXSD", tadir: "SXSD", adt: "SXSD/XSD" },
   { pseudo: "TABL", tadir: "TABL", adt: "TABL/DT" },
