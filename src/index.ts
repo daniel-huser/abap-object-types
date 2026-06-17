@@ -34,8 +34,8 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "DOMA", tadir: "DOMA", adt: "DOMA/DD" },
   { pseudo: "DTEL", tadir: "DTEL", adt: "DTEL/DE" },
   { pseudo: "ENHC", tadir: "ENHC", adt: "ENHC/XC" },
-  { pseudo: "ENHO", tadir: "ENHO", adt: "ENHO/XHB" },
-  { pseudo: "BADI_DEF", tadir: "ENHO", adt: "ENHO/XHB" }, // Used in ATC & Cloudification Repo
+  { pseudo: "ENHO", tadir: "ENHO", adt: "ENHO/XB" },
+  { pseudo: "BADI_DEF", tadir: "ENHO", adt: "ENHO/XB" }, // Used in ATC & Cloudification Repo
   { pseudo: "ENHS", tadir: "ENHS", adt: "ENHS/XS" },
   { pseudo: "FUNC", tadir: null, adt: "FUGR/FF" }, // pseudo type as function modules are not stored in TADIR
   { pseudo: "FUGR", tadir: "FUGR", adt: "FUGR/F" },
