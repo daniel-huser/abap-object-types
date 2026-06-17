@@ -28,12 +28,14 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "CLAS", tadir: "CLAS", adt: "CLAS/OC" },
   { pseudo: "DCLS", tadir: "DCLS", adt: "DCLS/DL" },
   { pseudo: "DDLS", tadir: "DDLS", adt: "DDLS/DF" },
+  { pseudo: "CDS_STOB", tadir: "DDLS", adt: "DDLS/DF" }, // Used in ATC & Cloudification Repo
   { pseudo: "DEVC", tadir: "DEVC", adt: "DEVC/K" },
   { pseudo: "DIAL", tadir: "DIAL", adt: "DIAL/A" },
   { pseudo: "DOMA", tadir: "DOMA", adt: "DOMA/DD" },
   { pseudo: "DTEL", tadir: "DTEL", adt: "DTEL/DE" },
   { pseudo: "ENHC", tadir: "ENHC", adt: "ENHC/XC" },
   { pseudo: "ENHO", tadir: "ENHO", adt: "ENHO/XHB" },
+  { pseudo: "BADI_DEF", tadir: "ENHO", adt: "ENHO/XHB" }, // Used in ATC & Cloudification Repo
   { pseudo: "ENHS", tadir: "ENHS", adt: "ENHS/XS" },
   { pseudo: "FUNC", tadir: null, adt: "FUGR/FF" }, // pseudo type as function modules are not stored in TADIR
   { pseudo: "FUGR", tadir: "FUGR", adt: "FUGR/F" },
@@ -88,13 +90,15 @@ function findByAdt(adt: string): ObjectTypeMapping {
 
 export function pseudoToTadir(pseudo: string): string {
   const m = findByPseudo(pseudo);
-  if (m.tadir === null) throw new Error(`No TADIR mapping for pseudo type: ${pseudo}`);
+  if (m.tadir === null)
+    throw new Error(`No TADIR mapping for pseudo type: ${pseudo}`);
   return m.tadir;
 }
 
 export function pseudoToAdt(pseudo: string): string {
   const m = findByPseudo(pseudo);
-  if (m.adt === null) throw new Error(`No ADT mapping for pseudo type: ${pseudo}`);
+  if (m.adt === null)
+    throw new Error(`No ADT mapping for pseudo type: ${pseudo}`);
   return m.adt;
 }
 
@@ -104,7 +108,8 @@ export function tadirToPseudo(tadir: string): string {
 
 export function tadirToAdt(tadir: string): string {
   const m = findByTadir(tadir);
-  if (m.adt === null) throw new Error(`No ADT mapping for TADIR type: ${tadir}`);
+  if (m.adt === null)
+    throw new Error(`No ADT mapping for TADIR type: ${tadir}`);
   return m.adt;
 }
 
@@ -114,7 +119,7 @@ export function adtToPseudo(adt: string): string {
 
 export function adtToTadir(adt: string): string {
   const m = findByAdt(adt);
-  if (m.tadir === null) throw new Error(`No TADIR mapping for ADT type: ${adt}`);
+  if (m.tadir === null)
+    throw new Error(`No TADIR mapping for ADT type: ${adt}`);
   return m.tadir;
 }
-
