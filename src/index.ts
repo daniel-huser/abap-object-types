@@ -67,6 +67,9 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "WAPA", tadir: "WAPA", adt: "WAPA/WO" },
   { pseudo: "WDCC", tadir: "WDCC", adt: "WDCC/WCI" },
   { pseudo: "XSLT", tadir: "XSLT", adt: "XSLT/VT" },
+  { pseudo: "CNTX", tadir: "CNTX", adt: null }, // Not supported in SAP
+  { pseudo: "ACID", tadir: "ACID", adt: "ACID/AD" },
+  { pseudo: "CHKV", tadir: "CHKV", adt: "CHKV/TYP" },
 ];
 
 function findByPseudo(pseudo: string): ObjectTypeMapping {
