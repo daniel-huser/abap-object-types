@@ -74,7 +74,8 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "DSFD", tadir: "DSFD", adt: "DSFD/SCF" },
   { pseudo: "DSFI", tadir: "DSFI", adt: "DSFI/SFI" },
   { pseudo: "SKTD", tadir: "SKTD", adt: "SKTD/TYP" },
-  { pseudo: "DRTY", tadir: "DRTY", adt: "DRTY/STY" }
+  { pseudo: "DRTY", tadir: "DRTY", adt: "DRTY/STY" },
+  { pseudo: "FUGS", tadir: "FUGS", adt: "FUGS/FX" }
 ];
 
 function findByPseudo(pseudo: string): ObjectTypeMapping {
