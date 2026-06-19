@@ -76,7 +76,12 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "DRTY", tadir: "DRTY", adt: "DRTY/STY" },
   { pseudo: "SMTG", tadir: "SMTG", adt: "SMTG" }, // it is actually only SMTG no slash, nothing...
   { pseudo: "FUGS", tadir: "FUGS", adt: "FUGS/FX" },
-  { pseudo: "SFPF", tadir: "SFPF", adt: "SFPF/5F" }
+  { pseudo: "SFPF", tadir: "SFPF", adt: "SFPF/5F" },
+  { pseudo: "NONT", tadir: "NONT", adt: "NONT/NOT" },
+  { pseudo: "RONT", tadir: "RONT", adt: "RONT/ROT" },
+  { pseudo: "CFDB", tadir: "CFDB", adt: "CFDB/CFB" },
+  { pseudo: "FDT0", tadir: "FDT0", adt: "FDT0/APP" },
+  { pseudo: "G4BA", tadir: "G4BA", adt: null }, // Not supported in ADT => SRVB and SRVD are used instead
 ];
 
 function findByPseudo(pseudo: string): ObjectTypeMapping {

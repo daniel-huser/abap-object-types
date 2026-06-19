@@ -1,6 +1,6 @@
 {
   "name": "@daniel-huser/abap-object-types",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "ABAP Object Type Mapping",
   "author": "Daniel Huser",
   "repository": {
