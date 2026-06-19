@@ -29,6 +29,7 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "DCLS", tadir: "DCLS", adt: "DCLS/DL" },
   { pseudo: "DDLS", tadir: "DDLS", adt: "DDLS/DF" },
   { pseudo: "CDS_STOB", tadir: "DDLS", adt: "DDLS/DF" }, // Used in ATC & Cloudification Repo
+  { pseudo: "CDS_SQL_VIEW", tadir: "DDLS", adt: "DDLS/DF" }, // Used in ATC & Cloudification Repo
   { pseudo: "DEVC", tadir: "DEVC", adt: "DEVC/K" },
   { pseudo: "DIAL", tadir: "DIAL", adt: "DIAL/A" },
   { pseudo: "DOMA", tadir: "DOMA", adt: "DOMA/DD" },
@@ -70,6 +71,10 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "CNTX", tadir: "CNTX", adt: null }, // Not supported in SAP
   { pseudo: "ACID", tadir: "ACID", adt: "ACID/AD" },
   { pseudo: "CHKV", tadir: "CHKV", adt: "CHKV/TYP" },
+  { pseudo: "DSFD", tadir: "DSFD", adt: "DSFD/SCF" },
+  { pseudo: "DSFI", tadir: "DSFI", adt: "DSFI/SFI" },
+  { pseudo: "SKTD", tadir: "SKTD", adt: "SKTD/TYP" },
+  { pseudo: "DRTY", tadir: "DRTY", adt: "DRTY/STY" }
 ];
 
 function findByPseudo(pseudo: string): ObjectTypeMapping {
