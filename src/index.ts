@@ -47,7 +47,6 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "NROB", tadir: "NROB", adt: "NROB/NRO" },
   { pseudo: "PARA", tadir: "PARA", adt: "PARA/R" },
   { pseudo: "PROG", tadir: "PROG", adt: "PROG/P" },
-  { pseudo: "SFPF", tadir: "SFPF", adt: "SFPF/F5F" },
   { pseudo: "SFPI", tadir: "SFPI", adt: "SFPI/FI" },
   { pseudo: "SHLP", tadir: "SHLP", adt: "SHLP/DH" },
   { pseudo: "SHMA", tadir: "SHMA", adt: "SHMA/SH" },
@@ -75,7 +74,9 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "DSFI", tadir: "DSFI", adt: "DSFI/SFI" },
   { pseudo: "SKTD", tadir: "SKTD", adt: "SKTD/TYP" },
   { pseudo: "DRTY", tadir: "DRTY", adt: "DRTY/STY" },
-  { pseudo: "FUGS", tadir: "FUGS", adt: "FUGS/FX" }
+  { pseudo: "SMTG", tadir: "SMTG", adt: "SMTG" }, // it is actually only SMTG no slash, nothing...
+  { pseudo: "FUGS", tadir: "FUGS", adt: "FUGS/FX" },
+  { pseudo: "SFPF", tadir: "SFPF", adt: "SFPF/5F" }
 ];
 
 function findByPseudo(pseudo: string): ObjectTypeMapping {
