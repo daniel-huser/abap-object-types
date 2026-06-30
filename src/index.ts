@@ -41,7 +41,7 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "ENHS", tadir: "ENHS", adt: "ENHS/XS" },
   { pseudo: "FUNC", tadir: null, adt: "FUGR/FF" }, // pseudo type as function modules are not stored in TADIR
   { pseudo: "FUGR", tadir: "FUGR", adt: "FUGR/F" },
-  { pseudo: "FORM", tadir: "FORM", adt: null }, // Not supported in ADT
+  { pseudo: "FORM", tadir: "FORM", adt: "FORM" }, // Not supported in ADT
   { pseudo: "INCL", tadir: "PROG", adt: "PROG/I" }, // include programs are stored as PROG type in TADIR
   { pseudo: "INTF", tadir: "INTF", adt: "INTF/OI" },
   { pseudo: "MSAG", tadir: "MSAG", adt: "MSAG/N" },
@@ -68,7 +68,7 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "WAPA", tadir: "WAPA", adt: "WAPA/WO" },
   { pseudo: "WDCC", tadir: "WDCC", adt: "WDCC/WCI" },
   { pseudo: "XSLT", tadir: "XSLT", adt: "XSLT/VT" },
-  { pseudo: "CNTX", tadir: "CNTX", adt: null }, // Not supported in SAP
+  { pseudo: "CNTX", tadir: "CNTX", adt: "CNTX" }, // Not supported in ADT
   { pseudo: "ACID", tadir: "ACID", adt: "ACID/AD" },
   { pseudo: "CHKV", tadir: "CHKV", adt: "CHKV/TYP" },
   { pseudo: "DSFD", tadir: "DSFD", adt: "DSFD/SCF" },
@@ -82,7 +82,8 @@ const MAPPINGS: readonly ObjectTypeMapping[] = [
   { pseudo: "RONT", tadir: "RONT", adt: "RONT/ROT" },
   { pseudo: "CFDB", tadir: "CFDB", adt: "CFDB/CFB" },
   { pseudo: "FDT0", tadir: "FDT0", adt: "FDT0/APP" },
-  { pseudo: "G4BA", tadir: "G4BA", adt: null }, // Not supported in ADT => SRVB and SRVD are used instead
+  { pseudo: "G4BA", tadir: "G4BA", adt: "G4BA" }, // Not supported in ADT => SRVB and SRVD are used instead
+  { pseudo: "IDOC", tadir: "IDOC", adt: "IDOC" }, // Not supported in ADT
 ];
 
 function findByPseudo(pseudo: string): ObjectTypeMapping {
